@@ -6,9 +6,8 @@ import NavBar from "./components/NavBar";
 function App() {
   return (
     <BrowserRouter>
-      <NavBar>
-        <AppRouter />
-      </NavBar>
+      <NavBar />
+      <AppRouter />
     </BrowserRouter>
   );
 }
