@@ -4,9 +4,9 @@ import { LOGIN_ROUTE, REGISTRATION_ROUTE } from '../utils/consts'
 import { NavLink, useLocation } from 'react-router-dom'
 
 const Auth = () => {
-    const location = useLocation()
-    console.log(location)
-    const isLogin = location.pathname === LOGIN_ROUTE
+    let location = useLocation()
+    let isLogin = location.pathname === LOGIN_ROUTE
+
     return (
         <Container className='=" d-flex justify-content-center align-items-center'
             style={{ height: window.innerHeight - 54 }}>
